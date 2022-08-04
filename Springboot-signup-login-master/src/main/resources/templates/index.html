@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <div th:replace="fragments/head.html :: fragment-head"></div>
+    <div th:replace="fragments/header.html :: fragment-header"></div>
+</head>
+<style>
+    img {
+        width: 100%;
+    }
+    button{
+        text-align: center; font-size: 14pt; color: cornflowerblue; text-decoration: dotted; margin: auto; box-shadow: 5px 5px 5px gray;
+    }
+</style>
+<body>
+<h1 style="text-align: center">Hello everyone, this is my test page</h1>
+<div style="display: grid">
+    <button onclick="location.href='/cities/list';">
+        Click this link to see all the cities around the world</button>
+</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/WMATA_system_map.svg/2471px-WMATA_system_map.svg.png">
+
+</body>
+</html>

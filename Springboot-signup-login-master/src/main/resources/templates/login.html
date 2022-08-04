@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/user/login.css}"/>
+    <div th:replace="fragments/head.html :: fragment-head"></div>
+    <div th:replace="fragments/header.html :: fragment-header"></div>
+    <link href="https://webfontworld.github.io/goodchoice/Jalnan.css" rel="stylesheet">
+</head>
+<body>
+<div id="box">
+    <div id="login-title" class="logo"><a href="#">TEST PAGE</a></div>
+    <form th:action="@{/user/login}" method="post">
+        <div class="line">
+            <input type="text" name="username" placeholder="아이디를 입력해주세요">
+            <input type="password" name="password" placeholder="비밀번호">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            <input class="btn" type="submit" value="로그인">
+        </div>
+    </form>
+</div>
+</body>
+</html>

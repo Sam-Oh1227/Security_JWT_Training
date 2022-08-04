@@ -1,0 +1,26 @@
+
+.pagination > ul {
+    text-align: center;
+    margin: auto;
+}
+
+.pagination > ul > li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.pagination > ul > li > .btn {
+    width: 16px;
+    padding-right: 22px;
+    -webkit-user-select: none;
+}
+
+.pagination > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.pagination > ul > li > strong {
+    font-weight: bold;
+    border: solid #6c757d 2px;
+}
